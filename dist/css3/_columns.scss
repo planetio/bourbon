@@ -45,3 +45,14 @@
 // auto || length
   @include prefixer(column-width, $length, webkit moz spec);
 }
+
+@mixin column-break-inside($break_location: auto) {
+// auto | avoid | avoid-page | avoid-column
+  -webkit-column-break-inside: $break_location;
+  -moz-column-break-inside: $break_location;
+  column-break-inside: $break_location;
+  break-inside: $break_location;
+}
+
+
+
